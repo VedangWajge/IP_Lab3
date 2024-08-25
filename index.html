@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Profile</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Additional CSS for styling */
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .card {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .skills {
+        margin-top: 20px;
+      }
+      .portfolio {
+        margin-top: 40px;
+      }
+      .portfolio img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .portfolio .card-title {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Profile</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Header -->
+    <header class="bg-primary text-white text-center py-5">
+      <div class="container">
+        <img src="pfp.jpg" alt="Profile Picture" class="profile-img" />
+        <h1 class="mt-3">Vedang Wajge</h1>
+        <p class="lead">Web Developer | Software Developer | Programmer</p>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="container mt-5" id="about">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2>About Me</h2>
+          <p>
+            A passionate individual, keen to learn and explore new technologies.
+            I like to be in a challenging atmosphere, work to my fullest and
+            shine the brightest! I am a team player, who focusses on building,
+            maintaining and working in a team, to achieve any target on time.
+            Undergraduate Information Technology @VESIT
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container skills" id="skills">
+      <h2 class="text-center">Skills</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Web Dev</h5>
+              <p class="card-text">
+                Created various projects with Html-css and Js and also MERN
+                stack projects which have real life use case scenarios.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Programming</h5>
+              <p class="card-text">
+                Proficient in C++ for developing efficient algorithms,
+                optimizing performance, and implementing responsive designs,
+                animations, and layouts in software applications. Skilled in
+                object-oriented programming and debugging.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Databases</h5>
+              <p class="card-text">
+                Skilled in database management and design, with expertise in SQL
+                for querying, updating, and managing data. Proficient in
+                optimizing database performance, ensuring data integrity, and
+                implementing security measures.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="container portfolio" id="portfolio">
+      <h2 class="text-center">Portfolio</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="pf1.png" class="card-img-top" alt="Project 1" />
+            <div class="card-body">
+              <h5 class="card-title text-center">Gadget-Green</h5>
+              <p class="card-text text-center">
+                Gadget-Green is an innovative website designed to address the
+                critical issue of electronic waste (E-Waste) disposal. It serves
+                as a one-stop solution for users looking to dispose of their
+                E-Waste responsibly while also educating them about the
+                environmental and health impacts of improper disposal.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="pf2.png" class="card-img-top" alt="Project 2" />
+            <div class="card-body">
+              <h5 class="card-title text-center">UI Expense Tracker</h5>
+              <p class="card-text text-center">
+                A web application that allows users to track their expenses.
+                Flask and pythonw with sql was used for the backend. Users login
+                and add, remove and manage their expesnses.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="pf3.png" class="card-img-top" alt="Project 3" />
+            <div class="card-body">
+              <h5 class="card-title text-center">Amazon Clone</h5>
+              <p class="card-text text-center">
+                This project involves creating a web application that replicates
+                the core functionalities of Amazon's e-commerce platform. It
+                includes features such as user authentication, product browsing,
+                search functionality, shopping cart management, and order
+                processing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container mt-5 mb-5" id="contact">
+      <h2 class="text-center">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto text-center">
+          <p>Email: <a href="mailto:vedangwajge.com">vedangwajge.com</a></p>
+          <p>Phone: <a href="tel:+919955847421">+91 9955847421</a></p>
+          <p>
+            LinkedIn:
+            <a href="https://linkedin.com/in/VedangWajge" target="_blank"
+              >linkedin.com/in/VedangWajge</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+      <p>&copy; 2024 Vedang Wajge. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
